@@ -20,12 +20,13 @@ The **TCP Encryption Server** is a simple client and server application that pro
 
 ## Configuration
 
-The server's configuration file allows you to customize various aspects of its operation, including:
-
-- Encryption algorithms and keys
-- Port numbers
-- Authentication settings
-- Logging options
+key + (plain text) --> enc_client --> enc_server --------
+                                                        |
+                                                        v
+                                                  (encrypted text)
+                                                               |
+                                                               v
+(decrypted text) <-- dec_server <-- dec_client <-- key + (encrypted text) 
 
 ## Contributing
 
